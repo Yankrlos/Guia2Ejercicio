@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favorito"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite su fruta favorita"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <AutoCompleteTextView
+        android:layout_marginTop="25dp"
+        android:id="@+id/Actfruta"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite su Animal Favorito"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <AutoCompleteTextView
+        android:layout_marginTop="25dp"
+        android:id="@+id/ActAnimal"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Digite su lenguaje favorito"
+        android:layout_marginTop="25dp"/>
+
+    <AutoCompleteTextView
+        android:layout_marginTop="25dp"
+        android:id="@+id/Actlenguaje"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/porcentaje"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:progress="0"
+        android:max="100"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pbarfavoritos"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnprocesar"
+        android:layout_gravity="center"
+        android:text="Procesar"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
